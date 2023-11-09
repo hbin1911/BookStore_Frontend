@@ -18,7 +18,7 @@ const CBook = () => {
       publishYear,
     }
     setLoading(true);
-    axios.post('http://localhost:5000/books', data)
+    axios.post('https://bookstoremern.vercel.app/books', data)
     .then(()=>{
       setLoading(false);
       navigate('/');

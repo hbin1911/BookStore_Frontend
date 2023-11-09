@@ -13,7 +13,7 @@ const DBook = () => {
 
   const handleDelete = () => {
     setLoading(true)
-    axios.delete(`http://localhost:5000/books/${id}`)
+    axios.delete(`https://bookstoremern.vercel.app/books/${id}`)
     .then(()=>{
       setLoading(false);
       navigate('/')
