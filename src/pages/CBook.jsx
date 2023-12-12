@@ -26,7 +26,7 @@ const CBook = () => {
     .catch((err)=>{
       setLoading(false)
       alert('An error occured! Please check console')
-      console.log(err);
+      console.log("err in request");
     })
   }
   return (
